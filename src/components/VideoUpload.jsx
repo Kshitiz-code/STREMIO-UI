@@ -68,7 +68,7 @@ function VideoUpload() {
       formData.append("description", videoMetaData.description);
       formData.append("file", selectedFile);
 
-      let response = await axios.post(
+      let response = await axios.post( 
         `http://localhost:8080/api/v1/videos`,
         formData,
         {
